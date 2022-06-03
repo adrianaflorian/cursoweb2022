@@ -1,0 +1,76 @@
+/*importar letras de Google: cuando importas las letras de Google
+siempre se pone al inicio del estilo*/
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+
+body {
+  background-color: bisque;
+}
+.contenedor {
+  background-color: white;
+  margin: auto;
+}
+/*llamamos a las letras descargadas de Google*/
+.fuente1 {
+  font-family: "Smooch", cursive;
+}
+.fuente2 {
+  font-family: "Smooch", cursive;
+}
+/*agregando estilos al parrafo*/
+.fuente3 {
+  font-style: italic;
+}
+.fuente4 {
+  font-style: oblique;
+}
+.fuente5 {
+  font-style: normal;
+}
+.fuente6 {
+  font-weight: bold;
+}
+.fuente7 {
+  font-weight: bolder;
+}
+.fuente8 {
+  font-style: small;
+}
+.fuente9 {
+  font-variant: small-caps;
+}
+.fuente10 {
+  font-size: 25px;
+}
+.fuente11 {
+  font-variant: normal;
+}
+/*utilizamos las fuentes descargadas*/
+@font-face {
+  font-family: "Smoch";
+  src: url("/fonts/Smooch-Regular.ttf");
+}
+@font-face {
+  font-family: "Macondo";
+  src: url("/fonts/Macondo-Regular.ttf");
+}
+@font-face {
+  font-family: "Harmony";
+  src: url("/fonts/Harmony.ttf");
+}
+@font-face {
+  font-family: "Rainbow";
+  src: url("/fonts/RainbowPaper.ttf");
+}
+/*utiliza,ps las fuentes de internet*/
+.fuente12 {
+  font-family: "Smoch";
+}
+.fuente13 {
+  font-family: "Macondo";
+}
+.fuente14 {
+  font-family: "Harmony";
+}
+.fuente15 {
+  font-family: "Rainbow";
+}
