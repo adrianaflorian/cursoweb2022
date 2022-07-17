@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Pagina5</title>
+    <script type="text/javascript">
+        //condiciones anidadas
+        //las condiciones anidadas te permiten evaluar mas de una condicion a la vez en diferentes estructuras if 
+        //Sintaxis
+        //if(condicion1){
+        //  .......
+        //}else{
+        //if(condicion2){
+        //    }else{
+        //        if(condicion3){
+        //          ......
+        //  }
+        //}
+    //}
+    /*EJEMPLO 1: dESARROLLAR UNA APLICACION QUE PERMITE INGRESAR EL PRECIO DE UN PRODUCTO Y LA CANTIDAD A COMPRAR Y DEPENDIENDO DE LA CATEGORIA SE LE APLICA UN DESCUENTO AL SUBTOTAL TAL COMO SE MUESTRA EN LA SIGUIENTE TABLA:
+    CATEGORIA     DESCUENTO
+    A             3%
+    B             5%
+    C             7%
+    D             9%
+    MOSTRAR TODOS LOS RESULTADOS*/
+    //¿Cuantas variables necesito?
+    //6 variables
+    //¿Que tipos de datos necesito?
+    //real, entero, texto
+    //¿Como se llamarian las variables?
+    //pre,can,sbt,cat,des,tot
+    //¿Que valores voy a leer?
+    //pre,cat,cat
+    //¿Cual seria la operacion?
+    //sbt=pre*can
+    //des=sbt*0.03--des=sbt*0.05--des=sbt*0.07--des=sbt*0.09
+    //tot=sbt-des
+    //declarando variables
+    var pre=0,can=0,sbt=0,cat=0,tot=0;
+    //capturando valores
+    pre=parseFloat(prompt("Ingrese el precio del producto:"));
+    can=parseInt(prompt("Ingrese la cantidad a comprar:"));
+    cat=prompt("Ingrese la categoria [a] o [b] o [c] o [d]");
+    //realizando operaciones
+    sbt=pre*can;
+    //condicion
+    if(cat=="a"){
+        des=sbt*0.03;
+    }else{
+        if(cat=="b"){
+            des=sbt*0.05
+        }else{
+            if(cat=="c"){
+            des=sbt*0.07
+            }else{
+                if(cat=="d"){
+                    des=sbt*0.09
+                }else{
+                    des=0;
+                }
+            }
+        }
+    }
+    tot=sbt-des;
+    //mostrando resultados
+    document.write("El subtotal es:"+sbt+"<br>");
+    document.write("El descuento es:"+des+"<br>");
+    document.write("El total es:"+tot+"<br>");
+    document.write("<hr>")
+            </script>
+</head>
+<body>
+    
+</body>
+</html>
